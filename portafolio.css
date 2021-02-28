@@ -1003,7 +1003,7 @@ h2, h3 {
 }
 
 	/* ESTILOS PARA TABLETS EN HORIZONTAL Y MONITORES NORMALES DE ESCRITORIO */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1023px) {
 		/* BARRA DE NAVEGACIÓN */
 	#navbar {
 		display: flex;
