@@ -1536,3 +1536,51 @@ h2, h3 {
 		font-size: 3.5em;
 	}
 }
+
+/* MEDIA QUERY ESPECIAL PARA iPad Pro Y Microsoft Surface Pro */
+@media only screen and (orientation: portrait) and (min-width: 1023px) and (max-width: 1024px) and (min-height: 1366) and (max-height: 1440px) {
+	/* EDICIÓN DE LA ANIMACIÓN */
+	@keyframes primero {
+    	0% {
+      		bottom: 2000px;
+      		color: #fff;
+    	}
+    	5% {
+      		color: #fff;
+    	}
+    	30% {
+      		color: #150485;
+    	}
+    	40% {
+    	  	color: #590995;
+    	}
+    	60% {
+	      	color: #c62a88;
+    	}
+    	80% {
+      		color: #03c4a1;
+    	}
+    	100% {
+      		bottom: 0;
+    	}
+  	}
+
+	@keyframes cuarto {
+	    0% {
+		    top: 2000px;
+    		color: #db6400;
+    	}
+	    30% {
+		    color: #db6400;
+    	}
+    	60% {
+	      	color: #ffa62b;
+    	}
+	    80% {
+      		color: #f8f1f1;
+    	}
+	    100% {
+    	  top: 0;
+    	}
+  	}
+}
