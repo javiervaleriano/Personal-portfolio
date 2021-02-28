@@ -613,6 +613,10 @@ h2, h3 {
 }
 
 	@media only screen and (orientation: landscape) {
+		body {
+			overflow-x: hidden;
+		}
+
 			/* BARRA DE NAVEGACIÓN */
 		#navbar ul {
 			flex-direction: row;
@@ -784,22 +788,25 @@ h2, h3 {
 			}
 		}
 		
+		@media only screen and (min-width: 625px) {
+				/* SECCIÓN DE PROYECTOS */
+			.project p {
+				padding-top: 15px;
+			}
+		}
+
 		@media only screen and (min-width: 635px) {
 				/* SECCIÓN DE PROYECTOS */
 			.project-tile {
 				grid-gap: 20px;
 			}
+			.project p {
+				padding-top: 16.3px;
+			}
 			
 				/* SECCIÓN DE CONTACTO */
 			#contacto .env-enl {
 				padding-top: 15px;
-			}
-		}
-		
-		@media only screen and (min-width: 663px) {
-				/* SECCIÓN DE PROYECTOS */
-			.project p {
-				padding-top: 16px;
 			}
 		}
 		
@@ -905,8 +912,11 @@ h2, h3 {
 	.project p {
 		font-size: 1.8em;
 	}
-	.pro-3 p, .pro-4 p {
-		padding-top: 16px;
+	.pro-1 p {
+		padding: 9px 0;
+	}
+	.pro-2 p, .pro-3 p, .pro-4 p {
+		padding-top: 20px;
 	}
 	
 		/* SECCIÓN DE CONTACTO */
@@ -928,60 +938,67 @@ h2, h3 {
 		font-size: 1.8em;
 	}
 	
+	@media only screen and (min-width: 724px) {
+			/* SECCIÓN DE PROYECTOS */
+		.project p {
+			padding-top: 18px;
+		}
+	}
+
 	@media only screen and (min-width: 749px) {
 			/* EDICIÓN DE LA ANIMACIÓN */
 		@keyframes segundo {
-    0% {
-      right: 550px;
-      color: #ff414d;
-    }
-    30% {
-      color: #ff414d;
-    }
-    40% {
-      color: #f56a79;
-    }
-    60% {
-      color: #1aa6b7;
-    }
-    80% {
-      color: #d9ecf2;
-    }
-    100% {
-      right: 0;
-    }
-  }
+	    	0% {
+	      		right: 550px;
+    	  		color: #ff414d;
+    		}
+    		30% {
+	      		color: #ff414d;
+    		}
+		    40% {
+    		 	color: #f56a79;
+	    	}
+	    	60% {
+    			color: #1aa6b7;
+		    }
+    		80% {
+	    		color: #d9ecf2;
+   		 	}
+		    100% {
+      			right: 0;
+	    	}
+  		}
   
-  @keyframes tercero {
-    0% {
-      left: 550px;
-      color: #00334e;
-    }
-    30% {
-      color: #00334e;
-    }
-    40% {
-      color: #145374;
-    }
-    60% {
-      color: #f6f5f5;
-    }
-    80% {
-      color: #ee6f57;
-    }
-    100% {
-      left: 0;
-    }
-  }
+  		@keyframes tercero {
+	    	0% {
+	      		left: 550px;
+    	  		color: #00334e;
+    		}
+	    	30% {
+    	  		color: #00334e;
+	    	}
+		    40% {
+     			color: #145374;
+    		}
+		    60% {
+    	 	 	color: #f6f5f5;
+    		}
+   			80% {
+      			color: #ee6f57;
+    		}
+	    	100% {
+      			left: 0;
+    		}
+  		}
 		
 			/* SECCIÓN DE PROYECTOS */
 		.project-img {
-		height: 85%;
-	}
-	.project p {
-		font-size: 1.8em;
-		padding-top: 12.5px;
-	}
+			height: 85%;
+		}
+		.project p {
+			font-size: 1.8em;
+			padding-top: 15px;
+		}
 	}
 }
 
@@ -1170,6 +1187,7 @@ h2, h3 {
 	}
 	.project p {
 		font-size: 2.2em;
+		padding-top: 12px;
 	}
 	
 		/* SECCIÓN DE CONTACTO */
@@ -1189,6 +1207,13 @@ h2, h3 {
 		/* FOOTER */
 	#footer {
 		font-size: 2.05em;
+	}
+}
+
+@media only screen and (min-width: 1300px) {
+		/* SECCIÓN DE PROYECTOS */
+	.project p {
+		padding-top: 13.5px;
 	}
 }
 
@@ -1306,6 +1331,7 @@ h2, h3 {
 	}
 	.project p {
 		font-size: 2.7em;
+		padding-top: 16.5px;
 	}
 	
 	/* SECCIÓN DE CONTACTO */
@@ -1320,7 +1346,7 @@ h2, h3 {
 		padding-bottom: 40px;
 	}
 	#contacto .fab {
-		font-size: 3.7em;
+		font-size: 3.85em;
 	}
 	#contacto .cont-p {
 		font-size: 2.7em;
