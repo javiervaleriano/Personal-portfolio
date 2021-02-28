@@ -9,6 +9,9 @@ body, * {
 body {
 	overflow-x: hidden;
 }
+#welcome-section {
+	overflow-x: hidden;
+}
 
 #navbar {
   position: fixed;
@@ -613,10 +616,6 @@ h2, h3 {
 }
 
 	@media only screen and (orientation: landscape) {
-		body {
-			overflow-x: hidden;
-		}
-
 			/* BARRA DE NAVEGACIÓN */
 		#navbar ul {
 			flex-direction: row;
