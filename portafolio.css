@@ -10,7 +10,7 @@ body {
 	overflow-x: hidden;
 }
 #welcome-section {
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 #navbar {
