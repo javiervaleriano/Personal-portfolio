@@ -1540,9 +1540,12 @@ h2, h3 {
 /* MEDIA QUERY ESPECIAL PARA iPad Pro Y Microsoft Surface Pro */
 @media only screen and (orientation: portrait) and (min-width: 1023px) and (max-width: 1024px) and (min-height: 1366) and (max-height: 1440px) {
 	/* EDICIÓN DE LA ANIMACIÓN */
+	.h1-jav, .h1-azu {
+		position: relative;
+	}
 	@keyframes primero {
     	0% {
-      		bottom: 2000px;
+      		bottom: 2100px;
       		color: #fff;
     	}
     	5% {
@@ -1567,7 +1570,7 @@ h2, h3 {
 
 	@keyframes cuarto {
 	    0% {
-		    top: 2000px;
+		    top: 2100px;
     		color: #db6400;
     	}
 	    30% {
